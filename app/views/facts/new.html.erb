@@ -1,0 +1,6 @@
+<%= form_for @fact, url: facts_path, html: {multipart: true} do |f| %>
+    <%= f.text_area :description %>
+    <%= f.text_field :read_more_link %>
+    <%= f.file_field :image %>
+    <%= f.submit 'Submit' %>
+<% end %>

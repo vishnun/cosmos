@@ -1,0 +1,11 @@
+<table style="width:100%">
+
+<%- @facts.each do |fact| %>
+    <tr>
+      <td><%= image_tag fact.image.url(:thumb) %></td>
+      <td><%= label :description, fact.description %></td>
+      <td><%= label :read_more_link, fact.read_more_link %></td>
+    </tr>
+<% end %>
+
+</table>
